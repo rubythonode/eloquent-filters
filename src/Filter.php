@@ -41,8 +41,8 @@ abstract class Filter
     {
         $this->builder = $builder;
 
-        foreach ($this->getFilters() as $filter) {
-            call_user_func([$this, $filter]);
+        foreach ($this->getFilters() as $filter => $value) {
+            $this->$filter($value);
         }
 
         return $this->builder;
@@ -58,6 +58,6 @@ abstract class Filter
     {
         $filters = array_diff(get_class_methods($this), ['__construct', 'apply', 'getFilters']);
 
-        return array_intersect($filters, array_keys($this->request->query()));
+        return $this->request->only($filters);
     }
 }
