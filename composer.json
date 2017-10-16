@@ -1,0 +1,45 @@
+{
+  "name": "mohd-isa/filterable-eloquents",
+  "description": "Laravel 5 Filterable Eloquents.",
+  "keywords": [
+    "laravel",
+    "arados-io",
+    "eloquent-filters",
+    "filterable-eloquents"
+  ],
+  "homepage": "https://github.com/arados-io/filterable-eloquents",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohammed Isa",
+      "email": "mohd.itcs@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "illuminate/support": "~5.5",
+    "illuminate/database": "~5.5",
+    "illuminate/contracts": "~5.5",
+    "illuminate/filesystem": "~5.5",
+    "illuminate/config": "~5.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0",
+    "orchestra/testbench": "~3.5.0",
+    "orchestra/database": "@dev",
+    "mockery/mockery": "^0.9.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arados\\Filters\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Arados\\Filters\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
