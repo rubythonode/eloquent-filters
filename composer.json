@@ -23,23 +23,9 @@
     "illuminate/filesystem": "~5.5",
     "illuminate/config": "~5.5"
   },
-  "require-dev": {
-    "phpunit/phpunit": "^6.0",
-    "orchestra/testbench": "~3.5.0",
-    "orchestra/database": "@dev",
-    "mockery/mockery": "^0.9.9"
-  },
   "autoload": {
     "psr-4": {
       "Arados\\Filters\\": "src"
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Arados\\Filters\\Test\\": "tests"
-    }
-  },
-  "scripts": {
-    "test": "vendor/bin/phpunit"
   }
 }
