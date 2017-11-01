@@ -4,7 +4,7 @@ Easily filter Laravel Eloquent queries by using URL query strings.
 ## Installation
 Install the package via composer
 ```
-composer require mohd-isa/filterable-eloquent
+composer require mohd-isa/eloquent-filters
 ```
 
 ## Usage
