@@ -36,3 +36,13 @@ class UserFilter extends Filter
 Note that you are able to access the query builder instance of user by using ``$this->builder``.
 
 Now in order to check for URL query strings and perform the corrosponding filter, you need to use ``User::filter($request)->get()``.
+
+## Security
+If you discover any security related issues, please email mohd.itcs@gmail.com instead of using the issue tracker.
+
+## Credits
+* [Mohammed Isa](https://github.com/mohd-isa)
+* [All Contributors](https://github.com/mohd-isa/laravel-settings/graphs/contributors)
+
+## License
+The [MIT License (MIT)](https://github.com/mohd-isa/laravel-settings/blob/master/LICENSE.md). Please see License File for more information.
